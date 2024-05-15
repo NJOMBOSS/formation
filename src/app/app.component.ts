@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ContactDetailsComponent } from "./contact-details/contact-details.component";
+import { Contact } from './models';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  imports: [RouterOutlet, ContactDetailsComponent]
 })
 export class AppComponent {
-  title = 'formation';
+  myContact: Contact = {
+    id: 'abcd',
+    lastName: 'Henri',
+    firstName: 'Kokou',
+    phoneNumber: '+22570000000'
+
+  };
 }
