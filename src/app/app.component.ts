@@ -11,7 +11,7 @@ import { Contact } from './models';
   imports: [RouterOutlet, ContactDetailsComponent]
 })
 export class AppComponent {
-  myContact: Contact = {
+  myContacts: Contact = {
     id: 'abcd',
     lastName: 'Henri',
     firstName: 'Kokou',
